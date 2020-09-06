@@ -69,9 +69,6 @@ body {
 	}
 }
 
-.section-outer {
-}
-
 .section-inner {
 	width: 1180px;
 	margin: 0 auto;
@@ -220,7 +217,7 @@ body {
 	margin-top: 120px;
 	border-top: 1px solid #e2e2e2;
 
-	&__item + &__item {
+	&__item+&__item {
 		margin-left: 40px;
 	}
 
@@ -299,6 +296,7 @@ body {
 		line-height: 51px;
 		color: #414141;
 	}
+
 	&__subtitle {
 		font-weight: 300;
 		font-size: 16px;
@@ -307,12 +305,15 @@ body {
 		width: 550px;
 		margin: 0 auto 80px;
 	}
+
 	&__list {
 		display: flex;
 		justify-content: center;
+
 		&-item {
 			flex-basis: 370px;
 			padding: 60px 45px;
+
 			&-title {
 				font-weight: bold;
 				font-size: 14px;
@@ -321,8 +322,10 @@ body {
 				color: #414141;
 				padding-bottom: 27px;
 			}
+
 			&-price {
 				padding-bottom: 28px;
+
 				.prefix {
 					font-weight: bold;
 					font-size: 72px;
@@ -330,12 +333,14 @@ body {
 					text-align: center;
 					color: #fe4fa7;
 				}
+
 				.postfix {
 					font-size: 14px;
 					line-height: 17px;
 					color: #414141;
 				}
 			}
+
 			&-description {
 				font-weight: 300;
 				font-size: 16px;
@@ -344,9 +349,11 @@ body {
 				color: #6c6c6c;
 				padding-bottom: 50px;
 			}
+
 			&-button {
 				padding-bottom: 20px;
 			}
+
 			&.active {
 				background-color: #f6fafd;
 			}
@@ -370,13 +377,12 @@ body {
 		line-height: 60px;
 		margin-bottom: 28px;
 	}
+
 	&__description {
 		font-size: 20px;
 		line-height: 30px;
 		width: 50%;
 		margin: 0 auto 44px;
-	}
-	&__button {
 	}
 }
 
@@ -386,6 +392,7 @@ body {
 .section-footer {
 	margin-top: 90px;
 	padding-bottom: 90px;
+
 	&__logo {
 		text-align: center;
 		font-weight: bold;
@@ -394,15 +401,18 @@ body {
 		color: #464646;
 		margin-bottom: 30px;
 	}
+
 	&__nav {
 		list-style: none;
 		display: flex;
 		justify-content: center;
 		margin-bottom: 60px;
+
 		li {
-			& + li {
+			&+li {
 				margin-left: 60px;
 			}
+
 			a {
 				text-decoration: none;
 				font-weight: bold;
@@ -419,6 +429,7 @@ body {
 			}
 		}
 	}
+
 	&__copyright_and_links {
 		display: flex;
 		justify-content: space-around;
@@ -426,6 +437,7 @@ body {
 		line-height: 17px;
 	}
 }
+
 .helper-link {
 	margin: 0;
 	padding: 0;
@@ -434,9 +446,10 @@ body {
 	display: flex;
 
 	li {
-		& + li {
+		&+li {
 			margin-left: 20px;
 		}
+
 		a {
 			text-decoration: none;
 			color: #464646;
